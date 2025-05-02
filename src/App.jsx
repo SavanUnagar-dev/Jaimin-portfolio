@@ -5,6 +5,7 @@ import Features from './Components/Features'
 import Designer from './Components/Designer'
 import AmazingWork from './Components/AmazingWork'
 import SkillSection from './Components/SkillSection'
+import ServicesSection from './Components/ServicesSection'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Designer/>
       <AmazingWork/>
       <SkillSection/>
+      <ServicesSection/>
     </div>
   )
 }
