@@ -6,6 +6,8 @@ import Designer from './Components/Designer'
 import AmazingWork from './Components/AmazingWork'
 import SkillSection from './Components/SkillSection'
 import ServicesSection from './Components/ServicesSection'
+import ClaintReview from './Components/ClaintReview'
+import BlogSection from './Components/BlogSection'
 
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
       <AmazingWork/>
       <SkillSection/>
       <ServicesSection/>
+      <ClaintReview/>
+      <BlogSection/>
     </div>
   )
 }
