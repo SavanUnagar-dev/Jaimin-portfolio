@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaQuoteLeft } from "react-icons/fa";
+import BgImg from "../assets/background/background-.avif";
 
 const TestimonialsCarousel = () => {
   const testimonials = [
@@ -28,7 +29,10 @@ const TestimonialsCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full py-20 bg-white overflow-hidden">
+    <div
+      className="relative w-full py-20 bg-white bg-cover bg-center overflow-hidden"
+      style={{ backgroundImage: `url(${BgImg})` }}
+    >
       <div className="text-center my-16 px-4">
         <h4 className="text-orange-500 font-semibold text-lg mb-2">
           Testimonials

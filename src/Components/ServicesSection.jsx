@@ -42,7 +42,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="relative z-10 py-16 px-4 sm:px-6 lg:px-20 bg-white">
+    <section id="service" className="relative z-10 py-16 px-4 sm:px-6 lg:px-20 bg-white">
       {/* Background Illustration (Optional) */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-[-1]">
         <img

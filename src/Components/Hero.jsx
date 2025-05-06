@@ -57,8 +57,8 @@ const Hero = () => {
             Hello, I'm
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold text-black">
-            Jaimin <br className="md:hidden" /> Jikadra
+          <h1 className="text-3xl md:text-5xl font-extrabold text-black">
+            Jaimin Jikadra
           </h1>
 
           <h2 className="text-xl md:text-2xl font-medium">
@@ -121,7 +121,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 flex justify-center w-full">
+      <div className="absolute mt-4 md:mt-0 bottom-8 flex justify-center w-full">
         <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-black rounded-full flex items-start justify-center p-1">
           <div className="w-0.5 h-2 md:h-3 bg-black animate-bounce"></div>
         </div>

@@ -8,6 +8,9 @@ import SkillSection from './Components/SkillSection'
 import ServicesSection from './Components/ServicesSection'
 import ClaintReview from './Components/ClaintReview'
 import BlogSection from './Components/BlogSection'
+import FAQ from './Components/FAQ'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -22,6 +25,9 @@ const App = () => {
       <ServicesSection/>
       <ClaintReview/>
       <BlogSection/>
+      <FAQ/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

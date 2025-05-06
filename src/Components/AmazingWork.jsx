@@ -56,7 +56,7 @@ const AmazingWork = () => {
 
   return (
     <>
-      <section className="text-center py-16 px-4">
+      <section id="portfolio" className="text-center py-16 px-4">
         <h4 className="text-orange-600 text-lg font-semibold mb-2">
           Portfolio
         </h4>

@@ -52,7 +52,7 @@ const AboutSection = () => {
   }, [hasAnimated]);
 
   return (
-    <section ref={sectionRef} className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-16 md:py-24 max-w-6xl mx-auto">
+    <section id="about" ref={sectionRef} className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-16 md:py-24 max-w-6xl mx-auto">
       {/* Left Side - Image and Stats */}
       <div className="relative flex-1 flex justify-center">
         <img

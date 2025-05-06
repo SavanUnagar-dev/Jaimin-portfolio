@@ -39,25 +39,25 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/about"
-            className="text-black font-medium hover:text-[#ff5722] transition-colors duration-300"
+            href="#about"
+            className="text-black font-medium hover:text-[#ff5722] transition-all duration-300 "
           >
             About
           </a>
-          <a
-            href="/portfolio"
+          <a  
+            href="#portfolio"
             className="text-black font-medium hover:text-[#ff5722] transition-colors duration-300"
           >
             Portfolio
           </a>
           <a
-            href="/service"
+            href="#service"
             className="text-black font-medium hover:text-[#ff5722] transition-colors duration-300"
           >
             Service
           </a>
           <a
-            href="/blog"
+            href="#blog"
             className="text-black font-medium hover:text-[#ff5722] transition-colors duration-300"
           >
             Blog
