@@ -32,7 +32,7 @@ export default function FAQ() {
       <h1 className="text-4xl font-bold text-center mb-4">FAQ</h1>
       <p className="text-center text-gray-600 mb-10">
         here are some of the frequently asked questions or{" "}
-        <a href="#" className="text-red-500">
+        <a href="#" className="text-[#31A8FF]">
           Contact me?
         </a>
       </p>

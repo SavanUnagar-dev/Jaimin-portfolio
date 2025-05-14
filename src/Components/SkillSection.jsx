@@ -37,12 +37,12 @@ export default function SkillSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-4 sm:px-8 md:px-12 lg:px-20 py-12 flex flex-col md:flex-row items-center gap-10 bg-cover bg-center bg-no-repeat"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-10 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/your-background.jpg')" }}
     >
       {/* Left Content */}
       <div className="bg-white bg-opacity-90 p-6 sm:p-8 md:p-10 rounded-xl w-full md:w-1/2">
-        <p className="text-orange-500 font-semibold text-lg">Design is Life</p>
+        <p className="text-[#31A8FF] font-semibold text-lg">Design is Life</p>
         <h2 className="text-3xl sm:text-4xl font-bold mt-2 leading-tight">
           I Develop Skills Regularly <br /> to Keep Me Update
         </h2>
@@ -78,7 +78,7 @@ export default function SkillSection() {
         <img
           src={skill}
           alt="Skill"
-          className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-xl"
+          className="w-full md:h-[550px] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-xl"
         />
       </div>
     </section>

@@ -28,7 +28,7 @@ const BlogSection = () => {
   return (
     <section id="blog" className="py-20 bg-white">
       <div className="text-center mb-12">
-        <h4 className="text-orange-500 font-semibold mb-2">From My Blog</h4>
+        <h4 className="text-[#31A8FF] font-semibold mb-2">From My Blog</h4>
         <h2 className="text-3xl md:text-4xl font-bold">
           Our Recent Updates, Blog,
           <br />
@@ -53,7 +53,7 @@ const BlogSection = () => {
               </span>
             </div>
             <div className="p-4">
-              <p className="text-orange-500 font-semibold text-sm capitalize">
+              <p className="text-[#31A8FF] font-semibold text-sm capitalize">
                 {post.category}
               </p>
               <h3 className="font-bold text-lg mt-2 text-gray-800">

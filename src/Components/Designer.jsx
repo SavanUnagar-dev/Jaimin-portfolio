@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import { motion } from "framer-motion"; // Import Framer Motion
 import designer from '../assets/skill-img/designer.jpg';
 
 const AboutSection = () => {
@@ -17,18 +17,18 @@ const AboutSection = () => {
     const yearInterval = setInterval(() => {
       yearCount++;
       setYears(yearCount);
-      if (yearCount >= 6) clearInterval(yearInterval);
+      if (yearCount >= 2) clearInterval(yearInterval);
     }, 400);
 
     // Projects: Count +5 every 50ms
     const projectInterval = setInterval(() => {
       projectCount += 5;
       setProjects(projectCount);
-      if (projectCount >= 300) {
-        setProjects(300); // stop exactly at 300
+      if (projectCount >= 100) {
+        setProjects(100); 
         clearInterval(projectInterval);
       }
-    }, 100);
+    }, 50);
   };
 
   useEffect(() => {
@@ -52,9 +52,18 @@ const AboutSection = () => {
   }, [hasAnimated]);
 
   return (
-    <section id="about" ref={sectionRef} className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-16 md:py-24 max-w-6xl mx-auto">
+    <section
+      id="about"
+      ref={sectionRef}
+      className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-16 md:py-24 max-w-6xl mx-auto"
+    >
       {/* Left Side - Image and Stats */}
-      <div className="relative flex-1 flex justify-center">
+      <motion.div
+        className="relative flex-1 flex justify-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <img
           src={designer}
           alt="Team"
@@ -68,26 +77,48 @@ const AboutSection = () => {
           <p className="text-purple-600 text-3xl font-bold">{projects}+</p>
           <p className="text-gray-600 font-bold">Total Projects</p>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right Side - Text */}
       <div className="flex-1">
-        <p className="text-orange-600 font-semibold text-xl">I'm a Designer</p>
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight mt-2 mb-6">
-          I Can Design Anything<br />You Want
-        </h2>
-        <p className="text-gray-600 text-lg leading-relaxed mb-6">
+        <motion.p
+          className="text-[#31A8FF] font-semibold text-[19px]"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          I'm a Designer
+        </motion.p>
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold leading-tight mt-2 mb-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          I Can Design Anything
+          <br />
+          You Want
+        </motion.h2>
+        <motion.p
+          className="text-gray-600 text-lg leading-relaxed mb-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.7 }}
+        >
           Hello there! I'm a graphic designer and web designer, and I'm very passionate and dedicated to my work. With 6+ years experience as a professional graphic designer and web designer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
-        </p>
-        <button
-              href="/book-demo"
-              className="relative overflow-hidden pointer-coarse: border border-[#ff5722] text-white font-medium px-5 py-2 rounded-full group"
-            >
-              <span className="absolute inset-0 bg-[#ff5722] translate-y-0 group-hover:translate-y-full transition-transform duration-500 ease-in-out"></span>
-              <span className="relative z-10 group-hover:text-[#ff5722] transition-colors duration-500">
-                Hire Me
-              </span>
-            </button>
+        </motion.p>
+        <motion.button
+          href="/book-demo"
+          className="relative overflow-hidden pointer-coarse: border border-[#31A8FF] text-white font-medium px-5 py-2 rounded-full group"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          <span className="absolute inset-0 bg-[#31A8FF] translate-y-0 group-hover:translate-y-full transition-transform duration-500 ease-in-out"></span>
+          <span className="relative z-10 group-hover:text-[#31A8FF] transition-colors duration-500">
+            Hire Me
+          </span>
+        </motion.button>
       </div>
     </section>
   );

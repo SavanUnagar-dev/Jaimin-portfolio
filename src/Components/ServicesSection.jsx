@@ -54,7 +54,7 @@ const ServicesSection = () => {
 
       {/* Title */}
       <div className="text-center mb-12">
-        <h4 className="text-orange-500 text-lg font-semibold">Services</h4>
+        <h4 className="text-[#31A8FF] text-lg font-semibold">Services</h4>
         <h2 className="text-4xl font-bold mt-2">What I Do for Clients</h2>
         <p className="mt-2 text-gray-500 max-w-xl mx-auto">
           This is what we do to keep our hunger for great work satisfied

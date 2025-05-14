@@ -34,7 +34,7 @@ const TestimonialsCarousel = () => {
       style={{ backgroundImage: `url(${BgImg})` }}
     >
       <div className="text-center my-16 px-4">
-        <h4 className="text-orange-500 font-semibold text-lg mb-2">
+        <h4 className="text-[#31A8FF] font-semibold text-lg mb-2">
           Testimonials
         </h4>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -48,7 +48,7 @@ const TestimonialsCarousel = () => {
 
       {/* Carousel Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
-        <FaQuoteLeft className="text-4xl text-orange-500 mx-auto mb-6" />
+        <FaQuoteLeft className="text-4xl text-[#31A8FF] mx-auto mb-6" />
 
         <Swiper
           pagination={{
