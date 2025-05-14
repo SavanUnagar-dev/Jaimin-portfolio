@@ -5,7 +5,7 @@ import Jaimin from "../assets/Jaimin/jaimin-hero.png";
 
 import figmaIcon from "../assets/hero-icon/figma-icon.png";
 import aiIcon from "../assets/hero-icon/AI.png";
-import psIcon from "../assets/hero-icon/PS.png";
+import psIcon from "../assets/hero-icon/ps.png";
 import xdIcon from "../assets/hero-icon/XD.png";
 
 import { FaDribbble } from "react-icons/fa";
