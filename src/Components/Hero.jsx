@@ -16,7 +16,8 @@ const icons = [
   {
     name: "Figma",
     icon: figmaIcon,
-    position: "md:bottom-22 bottom-16 left-1/4 md:left-1/4 transform -translate-x-1/2",
+    position:
+      "md:bottom-22 bottom-16 left-1/4 md:left-1/4 transform -translate-x-1/2",
   },
   {
     name: "AI",
@@ -64,7 +65,7 @@ const Hero = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex-1 space-y-3 md:space-y-6 text-center lg:text-left order-2 lg:order-1"
+          className="flex-1 space-y-2 md:space-y-6 text-left order-2 lg:order-1"
         >
           <div className="text-xl md:text-2xl font-medium text-[#31A8FF]">
             Hello, I'm
@@ -96,7 +97,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="text-gray-500 max-w-md mx-auto lg:mx-0"
+            className="text-gray-500 max-w-md lg:mx-0"
           >
             I'm a creative designer based in India, and I'm very passionate and
             dedicated to my work.
@@ -107,7 +108,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="flex flex-col sm:flex-row items-center gap-4 mt-6 justify-center lg:justify-start"
+            className="flex flex-col sm:flex-row items-start gap-4 mt-4 sm:mt-6"
           >
             <a
               href="/about"
@@ -123,7 +124,7 @@ const Hero = () => {
                 href="https://www.behance.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:#31A8FF"
+                className="hover:text-[#31A8FF]"
               >
                 Bē
               </a>
@@ -131,7 +132,7 @@ const Hero = () => {
                 href="https://dribbble.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:#31A8FF"
+                className="hover:text-[#31A8FF]"
               >
                 <FaDribbble className="mt-1 text-xl" />
               </a>
@@ -139,7 +140,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:#31A8FF"
+                className="hover:text-[#31A8FF]"
               >
                 in
               </a>
